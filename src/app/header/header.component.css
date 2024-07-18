@@ -1,0 +1,29 @@
+.nav-header {
+    position: relative;
+    background: #00214a;
+}
+
+.nav-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 1200px;
+    display: flex;
+}
+
+.header-content-block {
+    margin-right: 20px;
+}
+
+.currencies-list-wrapper {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency-rate {
+    margin-right: 10px;
+}

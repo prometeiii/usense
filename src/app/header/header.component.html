@@ -1,0 +1,10 @@
+<header class="nav-header">
+    <div class="nav-container">
+        <section class="header-content-block logo-wrapper">
+            <img src="/assets/images/usense-logo.svg" class="usense-logo">
+        </section>
+        <section class="header-content-block currencies-list-wrapper">
+            <span class="currency-rate" *ngFor="let currency of currencies">{{ currency.name }} : {{ currency.rate }}</span>
+        </section>
+    </div>
+  </header>
