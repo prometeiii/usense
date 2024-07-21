@@ -1,4 +1,37 @@
-.currency__content {
+.converter-container {
+    width: 800px;
+    margin: auto;
+    box-shadow: 0 10px 20px 0 #b3bbc673;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.converter-content {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.currency-content {
     display: flex;
     flex-wrap: wrap;
+    width: 300px;
+}
+
+.converter-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.currency-input {
+    width: 100%;
+}
+
+.exhange-icon {
+    flex-grow: 0;
+    max-width: 8.33%;
+    flex-basis: 8.33%;
 }
