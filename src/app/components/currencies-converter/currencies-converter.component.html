@@ -15,8 +15,8 @@
                             [formControl]="converterFields.controls.firstCurrency.controls.name"
                             [matAutocomplete]="auto1">
                             <mat-autocomplete #auto1="matAutocomplete">
-                                @for (currency of firstFilteredCurrenies | async; track currency) {
-                                    <mat-option [value]="currency.name">{{currency.name}}</mat-option>
+                                @for (currency of firstFilteredCurrencies | async; track currency) {
+                                    <mat-option [value]="currency">{{currency}}</mat-option>
                                 }
                             </mat-autocomplete>
                         </mat-form-field>    
@@ -27,7 +27,7 @@
                                 matInput
                                 inputmode="numeric"
                                 type="number"
-                                [formControl]="converterFields.controls.firstCurrency.controls.rate">
+                                [formControl]="converterFields.controls.firstCurrency.controls.amount">
                         </mat-form-field>
                     </div>
                 </div>                
@@ -50,7 +50,7 @@
                             [matAutocomplete]="auto2">
                             <mat-autocomplete #auto2="matAutocomplete">
                                 @for (currency of secondFilteredCurrencies | async; track currency) {
-                                    <mat-option [value]="currency.name">{{currency.name}}</mat-option>
+                                    <mat-option [value]="currency">{{currency}}</mat-option>
                                 }
                             </mat-autocomplete>
                         </mat-form-field>    
@@ -61,7 +61,7 @@
                                 matInput
                                 inputmode="numeric"
                                 type="number"
-                                [formControl]="converterFields.controls.secondCurrency.controls.rate">
+                                [formControl]="converterFields.controls.secondCurrency.controls.amount">
                         </mat-form-field>
                     </div>
                 </div>                

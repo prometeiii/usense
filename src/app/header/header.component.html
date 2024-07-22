@@ -4,7 +4,7 @@
             <img src="/assets/images/usense-logo.svg" class="usense-logo">
         </section>
         <section class="header-content-block currencies-list-wrapper">
-            <span class="currency-rate" *ngFor="let currency of currencies">{{ currency.name }} : {{ currency.rate }}</span>
+            <span class="currency-rate" *ngFor="let currency of store.currenciesRates$ | async">{{ currency.name }} : {{ currency.rate | number:'1.4-4' }}</span>
         </section>
     </div>
   </header>
